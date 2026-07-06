@@ -42,7 +42,7 @@ tree (the bias code lives in `openfold3/core/metadynamics/`).
 
 ```bash
 conda activate openfold3
-pip install -e .
+pip install openfold3 
 ```
 
 Run the unit tests (no GPU or weights needed):
@@ -72,6 +72,19 @@ python scripts/run_metadynamics.py \
 ```
 
 This writes an ensemble of `.cif` structures to `--output-dir`.
+
+### Run baseline
+
+```bash
+python scripts/run_baseline.py \
+    --query-json query.json \
+    --inference-ckpt-path of3-p2-155k.pt \
+    --output-dir /tmp/of3-baseline-localmsa \
+    --runner-yaml runner_no_ds.yml \
+    --use-msa-server False \
+    --use-templates False \
+    --num-diffusion-samples 20
+```
 
 ### Compare against baseline
 
