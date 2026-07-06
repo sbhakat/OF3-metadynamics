@@ -183,3 +183,5 @@ potential to the model before inference.
 - **Fair comparisons:** the observed Rg range grows with sample count. Always
   compare baseline and metad at the *same* `--num-diffusion-samples`.
 - **Debug output:** set `METAD_DEBUG=1` to print per-step bias magnitudes.
+
+*Built using Claude Opus 4.8.*
