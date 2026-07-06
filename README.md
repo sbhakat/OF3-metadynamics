@@ -10,7 +10,7 @@ No retraining is required. The bias is applied at inference time only.
 
 ---
 
-## The idea in one equation
+## The idea 
 
 During diffusion, we deposit Gaussian "hills" on a collective variable (CV) —
 here the **radius of gyration** `Rg`. The accumulated hills form a bias energy:
